@@ -911,7 +911,7 @@ module GoogleSpreadsheet
                     <id>#{h(id)}</id>
                     <link rel="edit" type="application/atom+xml"
                       href="#{h(edit_url)}"/>
-                    <gs:cell row="#{h(row)}" col="#{h(col)}" inputValue="#{h(value)}"/>
+                    <gs:cell row="#{h(row)}" col="#{h(col)}" inputValue="#{value.to_s.to_xs}"/>
                   </entry>
                 EOS
               end
